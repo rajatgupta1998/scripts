@@ -1,0 +1,1 @@
+echo $whoami "welcome to HEDONIST"
