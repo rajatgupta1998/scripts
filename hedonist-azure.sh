@@ -1,4 +1,4 @@
-echo $whoami "welcome to HEDONIST"
+echo $whoami "welcome to HEDONIST, running on " $(lsb_release -d).
 
 
 echo "OK Microsoft, I will always prefer a clean and up-to-date system"
