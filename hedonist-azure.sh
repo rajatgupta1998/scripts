@@ -13,3 +13,7 @@ sudo apt clean && sudo apt autoremove --purge -y
 
 # update apt repos and do a system update
 sudo apt update && sudo apt upgrade -y
+
+# Let us add some basic packages from apt
+
+sudo apt install build-essential bc -y
