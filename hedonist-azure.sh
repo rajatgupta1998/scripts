@@ -1,5 +1,6 @@
-echo $whoami "welcome to HEDONIST, running on "$(lsb_release -d | cut -d ':' -f 2 | sed -e 's/^[[:space:]]*//') .
+LSB_RELEASE_D="$(lsb_release -d | cut -d ':' -f 2 | sed -e 's/^[[:space:]]*//')"
 
+echo $whoami "Welcome to HEDONIST, running on ""${LSB_RELEASE_D}" .
 
 echo "OK Microsoft, I will always prefer a clean and up-to-date system"
 
