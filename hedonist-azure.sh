@@ -18,4 +18,5 @@ sudo apt update && sudo apt upgrade -y
 
 sudo apt install build-essential bc -y
 
-sudo apt install neofetch ranger
+sudo apt install zsh
+
