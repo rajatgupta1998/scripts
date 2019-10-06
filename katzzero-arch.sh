@@ -37,3 +37,5 @@ do
     cd - || break
     rm -rf "${package}"
 done
+
+yay -S maven gradle
