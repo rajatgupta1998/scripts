@@ -15,3 +15,7 @@ sleep 4
 echo "Let us install yay, an AUR helper"
 
 sudo pacman -S yay
+
+echo -e ""
+echo "Updating that system of yours"
+yay
