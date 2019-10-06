@@ -6,6 +6,10 @@ echo $whoami "Welcome to HEDONIST, running on ""${LSB_RELEASE_D}" "${LSB_RELEASE
 
 echo -e ""
 
+echo "Please provide a password whenever required"
+
+echo -e ""
+
 echo "Let us install yay, an AUR helper"
 
 sudo pacman -S yay
