@@ -12,6 +12,10 @@ echo -e ""
 
 sleep 4
 
+echo "Setting up TimeZone to Asia/Kolkata"
+sudo timedatectl set-timezone Asia/Kolkata
+echo -e ""
+
 echo "Let us install yay, an AUR helper"
 
 sudo pacman -S yay
