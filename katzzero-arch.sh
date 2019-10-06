@@ -39,3 +39,8 @@ do
 done
 
 yay -S maven gradle
+
+echo "Setting up python2 for AOSP"
+mdkir ~/bin
+ln -s /bin/python2 ~/bin/python
+export PATH=~/bin:$PATH
