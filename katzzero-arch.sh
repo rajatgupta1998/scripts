@@ -23,3 +23,6 @@ sudo pacman -S yay
 echo -e ""
 echo "Updating that system of yours"
 yay
+
+echo "Installing some bare minimum packages"
+yay -S wget base-devel multilib-devel cmake clang svn speedtest-cli neofetch
