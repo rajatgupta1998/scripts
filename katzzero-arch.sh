@@ -10,6 +10,8 @@ echo "Please provide a password whenever required"
 
 echo -e ""
 
+sleep 4
+
 echo "Let us install yay, an AUR helper"
 
 sudo pacman -S yay
