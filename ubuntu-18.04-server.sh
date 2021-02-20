@@ -1,4 +1,9 @@
-#!/bin/bash
+#!/usr/bin/env bash
+
+# SPDX-License-Identifier: GPL-3.0-only
+
+# Script to install packages for my dev setup
+
 UNDER='\e[4m'
 RED='\e[31;1m'
 GREEN='\e[32;1m'
@@ -54,6 +59,14 @@ function install_oh_my_bash() {
     echo -e "$RED Change OSH_THEME to agnoster in .bashrc manually ... $ENDCOLOR"
 }
 
+function install_thefuck() {
+    sudo apt install python3-dev python3-pip python3-setuptools
+    sudo pip3 install thefuck
+    eval $(thefuck --alias)
+    echo 'eval "$(thefuck --alias)"' >> ~/.bashrc
+    . ~/.bashrc
+}
+
 #1. Update system
 echo -e "$YELLOW Updating your system ... $ENDCOLOR"
 sleep 3
@@ -91,3 +104,8 @@ echo -e "$GREEN Installing Git LFS complete ... $ENDLCOLOR"
 echo -e "$YELLOW Installing oh-my-bash ... $ENDCOLOR"
 install_oh_my_bash
 echo -e "$GREEN Installing oh-my-bash complete ... $ENDLCOLOR"
+
+#8. Install thefuck
+echo -e "$YELLOW Installing thefuck ... $ENDCOLOR"
+install_thefuck
+echo -e "$GREEN Installing thefuck complete ... $ENDLCOLOR"
