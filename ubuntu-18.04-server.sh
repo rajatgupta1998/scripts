@@ -67,6 +67,11 @@ function install_thefuck() {
     . ~/.bashrc
 }
 
+function install_repo() {
+    sudo curl --create-dirs -L -o /usr/local/bin/repo -O -L https://storage.googleapis.com/git-repo-downloads/repo
+    sudo chmod a+rx /usr/local/bin/repo
+}
+
 #1. Update system
 echo -e "$YELLOW Updating your system ... $ENDCOLOR"
 sleep 3
@@ -109,3 +114,8 @@ echo -e "$GREEN Installing oh-my-bash complete ... $ENDLCOLOR"
 echo -e "$YELLOW Installing thefuck ... $ENDCOLOR"
 install_thefuck
 echo -e "$GREEN Installing thefuck complete ... $ENDLCOLOR"
+
+#9. Install repo
+echo -e "$YELLOW Installing repo ... $ENDCOLOR"
+install_repo
+echo -e "$GREEN Installing repo complete ... $ENDLCOLOR"
